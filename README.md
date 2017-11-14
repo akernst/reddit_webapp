@@ -2,12 +2,12 @@ This is a simple web application that allows the user to specify a subreddit, an
 THere is a single text input; after entering text, the user presses 'ok' and the results of the search are returned.
 
 This application was build using:
-  Node.js
+  Node.js,
   Express.js
   
 Dependencies include:
-  body-parser
-  ejs
+  body-parser,
+  ejs,
   request
 
 To launch the application locally, simply change into the project directory, and run the command: node app.js

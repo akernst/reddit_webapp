@@ -1,0 +1,68 @@
+#wrapper{
+  width: auto;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#prompt {
+  font: normal 24px/1 Arial Black, Gadget, sans-serif;
+  color: #0096ff;
+  text-align: center;
+}
+
+.entry_icon {
+  height: 64px;
+  display: inline-block;
+  font: normal 20px/normal "Lucida Console", Monaco, monospace;
+  font-size: 50px;
+  padding-bottom: 5px;
+}
+
+.entry {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font: normal 20px/normal "Lucida Console", Monaco, monospace;
+}
+
+.url {
+  font: normal 16px/normal "Lucida Console", Monaco, monospace;
+}
+
+.ups {
+  font: normal 12px/normal "Lucida Console", Monaco, monospace;
+}
+
+#top {
+  padding: 20 0;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.input{
+  display: inline-block;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: 1px solid #b7b7b7;
+  border-radius: 9px;
+  font: normal 16px/normal "Lucida Console", Monaco, monospace;
+  color: rgba(29,137,175,1);
+  text-overflow: clip;
+}
+
+.button {
+  height: 20px;
+  display: inline-block;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #018dc4;
+  border-radius: 3px;
+  font: normal 16px/normal "Lucida Console", Monaco, monospace;
+  color: white;
+  text-overflow: clip;
+  background: #0199d9;
+}

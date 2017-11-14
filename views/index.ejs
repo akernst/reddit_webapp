@@ -1,0 +1,44 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>My Webapp</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="top">
+        <p id="prompt">Enter one of reddit's subreddit pages:</p>
+        <form id="subreddit_name" method="get" action="/subreddit/">
+          <input id="name" class="input" type="text" name="value" placeholder="Enter a subreddit.">
+          <input type="submit" class="button" value="OK">
+        </form>
+      </div>
+
+      <div id="response">
+        <% if (posts) { %>
+          <table>
+          <% for (var i = 0; i < posts.length; i++) { %>
+            <div>
+              <div class="entry_icon">></div>
+              <div class="entry">
+                <div class="title"><%= posts[i].title %></div>
+                <div class="url"><a href="<%= posts[i].url %>"><%= posts[i].url %></a></div>
+                <div class="ups">&uarr; <%= posts[i].ups %></div>
+              </div>
+            </div>
+          <% } %>
+          </table>
+        <% } %>
+
+        <% if (!posts && error) { %>
+          <p class="prompt"><% error %>!</p>
+          <p class="title">The requested subreddit was not found.</p>
+        <% } %>
+      </div>
+    </div>
+  </body>
+
+</html>
